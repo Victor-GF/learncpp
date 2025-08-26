@@ -24,6 +24,8 @@ void printStatus()
     {
         std::cout << Hangman::Session::getWrongLetterGuesses()[i];
     }
+
+    std::cout << '\n';
 }
 
 char inputForGuess()
@@ -126,8 +128,6 @@ inline void checkEndgame()
 void Hangman::gameplay()
 {
     printStatus();
-
-    std::cout << '\n';
 
     char guess{inputForGuess()};
 
